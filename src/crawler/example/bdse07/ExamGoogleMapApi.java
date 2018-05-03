@@ -22,7 +22,7 @@ public class ExamGoogleMapApi {
         String distance =
             CrawlerPack.start()
                     .getFromJson(uri)
-                    .select("legs > distance > text")
+                    .select("legs > distance text")
                     .text();
 
         System.out.println("result: " + distance);
